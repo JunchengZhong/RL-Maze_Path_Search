@@ -38,8 +38,8 @@ if __name__ == '__main__':
     image_path = "maze.jpg"
     maze_image = Image.open(image_path).convert("L")
     threshold = 128
-    binary_maze = np.array(maze_image) < threshold  # 黑色为 True（墙），白色为 False（通路）
-    maze_matrix = np.where(binary_maze, 1, 0)  # 1 表示墙，0 表示通路
+    binary_maze = np.array(maze_image) < threshold  
+    maze_matrix = np.where(binary_maze, 1, 0) 
     maze_matrix_cut = cut_maze_matrix_arround(matrix = maze_matrix)
     maze_matrix_block = pixel_to_block(maze_matrix_cut)
     maze_matrix_block[-5,-2] = 0.5
