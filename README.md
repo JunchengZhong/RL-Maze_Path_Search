@@ -3,4 +3,4 @@
 ![功能演示](git-ezgif.com-video-to-gif-converter.gif)
 
 ## 简易实验报告：
-![实验报告](report.pdf)
+[实验报告](report.pdf)
