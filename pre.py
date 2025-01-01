@@ -43,8 +43,6 @@ if __name__ == '__main__':
     maze_matrix_cut = cut_maze_matrix_arround(matrix = maze_matrix)
     maze_matrix_block = pixel_to_block(maze_matrix_cut)
     maze_matrix_block[-5,-2] = 0.5
-    print(maze_matrix_block[:10,:10])
     plt.imshow(maze_matrix_block,cmap="gray")
     plt.axis("off")
     plt.show()
-    print(maze_matrix_block.shape)

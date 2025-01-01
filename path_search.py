@@ -187,7 +187,7 @@ def main():
     rows, cols = maze_matrix_block.shape
     rows, cols = int(rows), int(cols)
     maze_matrix_block[44, 63] = 1  # start point
-    maze_matrix_block[45, 63] = 0  
+    # maze_matrix_block[45, 63] = 0  if we want to test the case that fails to search the paths.
     maze = maze_matrix_block
     start_point = (44, 63)
     final_point = (21, 43) #initial test
